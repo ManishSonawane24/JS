@@ -15,3 +15,12 @@ console.log(gameName.__proto__);
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.toLowerCase());
+
+const gameName1 = gameName.substring(1, 3);
+console.log(gameName1);
+
+const gameName2 = gameName.slice(1 , 3);
+console.log(gameName2);
+
+const gameName3 = "   Manish    ";
+console.log(gameName3.trim());
