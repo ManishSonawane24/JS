@@ -20,7 +20,7 @@ const obj2 = {4:'a', 5:'b', 6:'c'};
 // console.log(obj3);
 
 const obj4 = {...obj1, ...obj2};
-console.log(obj4);
+// console.log(obj4);
 // array of objects
 const users2 = [
     {
@@ -40,4 +40,9 @@ const users2 = [
 ];
 
 users2[0].name = "manish kumar";
-console.log(users2[0].name); 
+// console.log(users2[0].name);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+console.log(tinderUser.hasOwnProperty('name'));
