@@ -36,3 +36,11 @@ const addTwo = function(num){
     return num + 2
 }
 addTwo(5)
+const user = {
+    username: "manish",
+    price: 999,
+
+    welcome: function () {
+        console.log(`Welcome ${this.username} just logged in`);
+    }
+};
