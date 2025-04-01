@@ -1,4 +1,5 @@
 //  control flow statements
+/*
 // 1. if statement
 let age = 18;   
 if (age >= 18) {
@@ -71,6 +72,7 @@ for (let i = 0; i < 10; i++) {
     }
     console.log("Iteration number: " + i);
 }
+    */
 
 // Falsy values in JavaScript
 // 1. false
@@ -102,3 +104,40 @@ for (let i = 0; i < 10; i++) {
 // 17. any non-zero number (including negative numbers)
 // 18. any non-empty array
 // 19. any non-empty object
+
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for(const val of arr){
+//     console.log(val); // 1,2,3,4,5,6,7,8,9,10
+//     if(val === 5){
+//         continue; // skip the rest of the loop when val is 5
+//     }
+
+// }
+// const greetings = "Hello, World!";
+
+// for(const greet of greetings){
+//     console.log(`Each character is : ${greet}`); // H,e,l,l,o, ,W,o,r,l,d,! 
+//     // if(greet === "o"){
+//     //     continue; // skip the rest of the loop when greet is "o"
+//     // }
+// }
+
+const map = new Map();
+map.set('IN', "India");
+map.set('US', "United States");
+map.set('CA', "Canada");
+
+console.log(map); // Map(3) { 'IN' => 'India', 'US' => 'United States', 'CA' => 'Canada' }
+
+for (const element of map) {
+    console.log(element); // [ 'IN', 'India' ] [ 'US', 'United States' ] [ 'CA', 'Canada' ]
+    // if (element[0] === "US") {
+    //     continue; // skip the rest of the loop when element[0] is "US"
+    // }
+    
+}
+for (const [key, value] of map) {
+    console.log(`${key} :- ${value}`); 
+}
